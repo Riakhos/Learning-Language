@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Fiasco, Nous contacter</title>
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Accueil">Accueil</a></li>
+                <li><a href="menu.html" title="Menu">Menu</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Nous contacter</h1>
+        <form action="contact.html" method="post">
+            <fieldset>
+                    <legend>Nous contacter</legend>
+                    <div>
+                        <label for="emailinput">Votre email</label>
+                        <input type="email" name="email" placeholder="email" id="emailinput" required>
+                        <label for="nameinput">Votre nom</label>
+                        <input type="text" name="nom" id="nameinput" placeholder="nom">
+                        <label for="fileinput">Pièce jointe</label>
+                        <input type="file" name="file" id="fileinput" placeholder="Pièce jointe">
+                        <fieldset>
+                            <legend>Veuillez sélectionner votre plat préféré</legend>
+                            <div>
+                                <input type="checkbox" id="steakfrite" name="steakfrite" value="Steak Frite" checked />
+                                <label for="steakfrite">Steak Frite</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="steak" name="steak" value="Steak" />
+                                <label for="steak">Steak</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="frite" name="frite" value="Frite" />
+                                <label for="frite">Frite</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label>Sexe</label>
+                        <div>
+                            <input type="radio" name="sexe" id="masculin" checked>
+                            <label for="masculin">Masculin</label>  
+                        </div>                  
+                        <div>
+                            <input type="radio" name="sexe" id="feminin">
+                            <label for="feminin">Féminin</label>    
+                        </div>
+                    </div>
+                    <div>
+                        <label id="sexe">Sexe</label>
+                        <select name="sexe" id="sexe">
+                            <option value="m">Masculin</option>  
+                            <option value="f">Féminin</option>    
+                        </select>                  
+                    </div>
+                    <div>
+                        <label id="sexe">Sexe</label>
+                        <select name="sexe" id="sexe">
+                            <option value="m">Masculin</option>  
+                            <option value="f" selected>Féminin</option>    
+                        </select>                  
+                    </div>
+                    <div>
+                        <label id="animal">Animal péféré</label>
+                        <select name="animal" id="animal" multiple>
+                            <optgroup label="Mammifère"></optgroup>
+                            <option>Cheval</option>  
+                            <option>Chat</option>    
+                        </select>                  
+                    </div>
+                        <label for="message">Tapez votre message ici</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    <div>
+                        <label><input type="checkbox" name="cgu" required>J'accepte les conditions d'utilisations</label>
+                    </div>  
+                    <input type="submit" value="Envoyer un email">
+                    <input type="reset" value="Annuler">
+                    <button type="submit">Envoyer un email</button>
+                    <button type="reset">Annuler</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
