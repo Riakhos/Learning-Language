@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon restaurant, contact</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Nous contacter</h1>
+        <nav>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="menu.html" title="Voir le menu">Menu</a>
+            <a href="contact.html" title="Nous contacter">Contact</a>
+        </nav>
+        <a href="img/restaurant_le_fiasco.jpg" target="_blank" title="Le Fiasco">
+            <img src="img/restaurant_le_fiasco.jpg" alt="Le Fiasco" width="400" height="500">
+        </a>
+    </header>
+    <section>
+        <h2>Où nous trouver</h2>
+        <p>
+            128 rue de démonstration<br>
+            34000 Montpelier<br>
+            France
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20961.432994386025!2d2.227198638439665!3d48.95007501604066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66664dfcb055b%3A0x40b82c3688b36d0!2s95100%20Argenteuil!5e0!3m2!1sfr!2sfr!4v1727384342272!5m2!1sfr!2sfr" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Nous envoyer un mail</h2>
+        <form action="contact.html">
+            <fieldset>
+                <legend>Nous envoyer un mail</legend>
+                <div>
+                    <label for="email">Votre email</label>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+                <div>
+                    <label for="firstname">Votre prénom</label>
+                    <input type="text" name="firstname" placeholder="Prénom" id="firstname" required>
+                </div>
+                <div>
+                    <label for="name">Votre nom</label>
+                    <input type="text" name="name" placeholder="Nom" id="name" required>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" placeholder="Taper votre message" id="message" required></textarea>
+                </div>
+                <button>Envoyer votre mail</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <address>128 rue de démonstration</address>
+    </footer>
+</body>
+</html>
